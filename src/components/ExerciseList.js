@@ -1,0 +1,23 @@
+import React from 'react';
+import Card from './Card';
+
+const ExerciseList = ({ exercises }) => (
+    <>
+        {
+            exercises.map(({ id, title, description, img, leftColor, rightColor }) => {
+                return(
+                    <Card 
+                        key={id}
+                        title={title} 
+                        description={description}  
+                        img={img} 
+                        leftColor={leftColor} 
+                        rightColor={rightColor} 
+                    />
+                )
+            })
+        }
+    </>    
+)
+
+export default ExerciseList;

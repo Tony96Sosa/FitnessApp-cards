@@ -1,30 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Welcome from '../components/Welcome';
 import ExerciseList from '../components/ExerciseList';
 import AddButton from '../components/AddButton';
-// import data from '../data/data';
+import Loading from '../components/Loading';
+import FatalError from './500';
+import useFetch from '../Hook/useFetch';
+import url from '../data/config';
+
 
 const Exercises = () => {
-    const url = 'https://fitnessappi.herokuapp.com/api/exercises';
-    const [data, setData] = useState([]);
-    useEffect( () => {
-        const fetchExercise = async () => {
-            let res = await fetch(url)
-            let data = await res.json();
-            console.log(data);
-            setData(data);
-        }
-        fetchExercise();
-    }, [url]);
-    
+    const { data, loading, error } = useFetch(url);
+    if(loading){
+        return(
+            <Loading />
+        )
+    }
+    if(error){
+        return(
+            <FatalError />
+        )
+    }
     return(
-    <div>
-        <Welcome 
-            username='Kurt Anthony Sosa'/>
-        <ExerciseList 
-            exercises={data} />
-        <AddButton />
-    </div>
+        <>
+            <Welcome 
+                username='Kurt Anthony Sosa'/>
+            <ExerciseList 
+                exercises={data} />
+            <AddButton />
+        </>
 )}
 
 export default Exercises;

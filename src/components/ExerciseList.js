@@ -4,15 +4,11 @@ import Card from './Card';
 const ExerciseList = ({ exercises }) => (
     <>
         {
-            exercises.map(({ id, title, description, img, leftColor, rightColor }) => {
+            exercises.map((exercise) => {
                 return(
                     <Card 
-                        key={id}
-                        title={title} 
-                        description={description}  
-                        img={img} 
-                        leftColor={leftColor} 
-                        rightColor={rightColor} 
+                        key={exercise.id}
+                        { ...exercise }
                     />
                 )
             })

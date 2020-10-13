@@ -1,6 +1,6 @@
 import React from 'react';
-import '../components/styles/Errors.css';
-import NotFoundImg from '../images/404.png';
+import './Errors.css';
+import NotFoundImg from '../../images/404.png';
 
 const NotFound = () => (
     <div className="text-center">

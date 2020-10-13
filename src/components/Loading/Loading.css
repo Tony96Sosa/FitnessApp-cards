@@ -29,7 +29,7 @@
     content: '';
   }
   .loader:after {
-    background: #ffffff;
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
     width: 75%;
     height: 75%;
     border-radius: 50%;

@@ -1,0 +1,47 @@
+.Fitness-Add-container{
+    width: 80%;
+    height: 80px;
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2F7336;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #AA3A38, #2F7336);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #AA3A38, #2F7336); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.Fitness-Add-info-container{
+    width: 90%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Fitness-Add-info{
+    width: 90%;
+    height: 80%;
+    margin: 0;
+    border-radius: 25px;
+    font-size: 20px;
+    color: bisque;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.Fitness-Add-img-container{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Fitness-Add-img{
+    width: 80%;
+    height: 80%;
+}

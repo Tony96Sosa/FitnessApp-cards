@@ -1,8 +1,9 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../Card/Card';
+import './ExerciseList.css';
 
 const ExerciseList = ({ exercises }) => (
-    <>
+    <div className='ExerciseList-container'>
         {
             exercises.map((exercise) => {
                 return(
@@ -13,7 +14,7 @@ const ExerciseList = ({ exercises }) => (
                 )
             })
         }
-    </>    
+    </div>    
 )
 
 export default ExerciseList;

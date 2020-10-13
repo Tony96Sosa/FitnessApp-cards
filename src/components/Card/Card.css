@@ -1,0 +1,50 @@
+.Fitness-Card-container {
+    width: 100%;
+    height: 140px;
+    max-width: 520px;
+    margin: 20px auto;
+    border-radius: 15px;
+    display: flex;
+}
+.Fitness-container-img{
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.Fitness-img{
+    width: 90%;
+    max-height: 90%;
+    max-width: 130px;
+    border-radius: 10px;
+}
+.Fitness-container-Info {
+    width: 70%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.Fitness-Info-title{
+    width: 90%;
+    font-size: 23px;
+    color: bisque;
+    margin: 15px 0;
+}
+.Fitness-Info-description{
+    width: 90%;
+    color: beige;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+@media screen and (min-width: 600px) {
+    .Fitness-Info-title{
+        font-size: 28px;
+    }
+    .Fitness-Info-description{
+        font-size: 20px;
+    }
+}

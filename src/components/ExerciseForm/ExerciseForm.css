@@ -1,0 +1,23 @@
+.ExerciseForm-container{
+    width: 100%;
+    max-width: 520px;
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.ExerciseForm-text{
+    width: 100%;
+    max-width: 450px;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+.ExerciseForm-btn{
+    width: 50%;
+    height: 40px;
+    margin: 10px auto;
+    padding: 0;
+    border-radius: 10px;
+    font-size: 25px;
+    line-height: 40px;
+}

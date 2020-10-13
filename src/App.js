@@ -1,7 +1,7 @@
 import React from 'react';
 import Exercises from './pages/Exercises';
-import ExerciseNewContainer from './pages/ExerciseNewContainer';
-import notfound from './pages/404';
+import ExerciseNewContainer from './pages/ExerciseNewContainer/ExerciseNewContainer';
+import notfound from './pages/Error/404';
 import { BrowserRouter as Router,
   Route,
   Switch } from 'react-router-dom';

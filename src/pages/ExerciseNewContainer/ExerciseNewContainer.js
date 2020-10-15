@@ -37,7 +37,7 @@ const ExerciseNewContainer = ({ history }) => {
             }
             await fetch(url, config);
             setLoading(false);
-            history.push('/');
+            history.push('/exercises');
         } catch (error) {
             setLoading(false);
             setError(error);

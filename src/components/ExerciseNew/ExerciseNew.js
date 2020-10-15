@@ -14,7 +14,7 @@ const ExerciseNew = ({ form, onChange, onSubmit }) => {
                 onSubmit={onSubmit}
                 form={form}
             /> 
-            <AddButton ruta='/' texto='volver al inicio!!' />
+            <AddButton ruta='/exercises' texto='volver al inicio!!' />
         </div>
     )
 }

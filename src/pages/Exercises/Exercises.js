@@ -6,10 +6,12 @@ import Loading from '../../components/Loading/Loading';
 import FatalError from '../Error/500';
 import useFetch from '../../Hook/useFetch';
 import url from '../../data/config';
-// import './Exercises.css';
 
 
 const Exercises = () => {
+    const user = localStorage.getItem('user');
+    console.log(user)
+
     const { data, loading, error } = useFetch(url);
     if(loading){
         return(
@@ -24,7 +26,7 @@ const Exercises = () => {
     return(
         <>
             <Welcome 
-                username='Kurt Anthony Sosa'/>
+                username={ user }/>
             <ExerciseList 
                 exercises={data} />
             <AddButton ruta='/new' texto='agregar un ejercicio!!' />

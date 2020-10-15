@@ -1,0 +1,115 @@
+.Home-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Home-login-container{
+    width: 90%;
+    max-width: 460px;
+    min-height: 450px;
+    max-height: 90%;
+    border: 1px solid seashell;
+    border-radius: 10px;
+}
+.Title-container{
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: seashell;
+}
+.Title-text{
+    margin: 0;
+}
+/* ------- */
+.Home-Card-container {
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Home-container-img{
+    width: 60%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.Home-img{
+    width: 100%;
+    max-height: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.Label-container{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 15px 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.Label-text{
+    width: 50%;
+    margin: 0;
+    padding: 3px;
+    text-align: center;
+    border: 3px solid seashell;
+    border-radius: 5px;
+    border-bottom: none;
+    color: seashell;
+    background-color: skyblue;
+}
+
+.Input-container{
+    width: 100%;
+    margin: 10px 0;
+}
+.regular-style{
+    background-color: cadetblue;
+    width: 90%;
+    height: 45px;
+    border-radius: 5px;
+    border: 3px solid seashell;
+    color: seashell;
+    box-sizing: border-box;
+    margin-left: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+    outline: none;
+    border-top: none;
+}
+.regular-style::placeholder{
+    font-size: 20px;
+    color: #cccccc;
+    opacity: 0.8;
+}
+.Home-login-boton{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.Home-login-boton button{
+    width: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    color: #444240;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
